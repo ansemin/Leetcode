@@ -7,9 +7,9 @@ class Solution:
         for i in s:
             if i in vow:
                 new.append(i)
-        new.reverse()
+        new.reverse() #reverse string order
         
-        ss=list(s)
+        ss=list(s) #convert string to list 
         s=''
         
         x=0

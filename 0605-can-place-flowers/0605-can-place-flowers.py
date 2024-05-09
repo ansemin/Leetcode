@@ -3,11 +3,10 @@ class Solution:
         count=0
         for i in range(len(flowerbed)):
             if flowerbed[i]==0:
-                empty_left_plot=(i==0) or (flowerbed[i-1]==0)
-                empty_right_plot=(i==len(flowerbed)-1) or (flowerbed[i+1]==0)
-                
-                if empty_left_plot and empty_right_plot:
+                right_side=(flowerbed[i-1]==0) or (i==0)
+                left_side=(i==len(flowerbed)-1) or (flowerbed[i+1]==0)
+                if right_side and left_side:
                     flowerbed[i]=1
                     count+=1
-        
         return count>=n
+        

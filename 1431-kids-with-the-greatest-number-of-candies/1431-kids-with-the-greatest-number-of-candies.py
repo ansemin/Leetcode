@@ -4,9 +4,10 @@ class Solution(object):
         :type candies: List[int]
         :type extraCandies: int
         :rtype: List[bool]"""
+        candymax=max(candies)
         result=[]
         for candy in candies:
-            if candy + extraCandies >= max(candies):
+            if candy + extraCandies >= candymax:
                 result.append(True)
             else:
                 result.append(False)

@@ -4,9 +4,9 @@ class Solution(object):
         :type prices: List[int]
         :rtype: int
         """
-        profit =0 
-        for i in range(1, len(prices)):
-            if prices[i]>prices[i-1]:
-                profit+=prices[i]-prices[i-1]
-            
-        return profit
+        profit=0 #focus on buy low and sell high
+        for i in range(len(prices)-1):
+            if prices[i+1]>prices[i]:
+                profit+=prices[i+1]-prices[i]
+        print(profit)
+        return profit 

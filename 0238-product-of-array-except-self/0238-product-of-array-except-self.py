@@ -10,12 +10,12 @@ class Solution(object):
         for i in range(len(nums)):
             answer[i]=prefix
             prefix*=nums[i]
-            print('step={}: prefix={}, answer={}'.format(i,prefix, answer))
+            # print('step={}: prefix={}, answer={}'.format(i,prefix, answer))
         #right
         suffix=1
         for i in range(len(nums)-1,-1,-1):
             answer[i]*=suffix
             suffix*=nums[i]
-            print('Step{}: suffix={}, answer={}'.format(i,suffix,answer))
+            # print('Step{}: suffix={}, answer={}'.format(i,suffix,answer))
 
         return answer

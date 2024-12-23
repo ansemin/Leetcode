@@ -15,5 +15,5 @@ class Solution(object):
                 count[complement]-=1 #because the number can be only used once 
             else:
                 count[num]=count.get(num,0)+1
-            print('num: {}, complement: {}, count: {}, operation": {}'.format(num, complement, count, operations))
+            # print('num: {}, complement: {}, count: {}, operation": {}'.format(num, complement, count, operations))
         return operations 

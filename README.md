@@ -16,6 +16,7 @@ I keep all the problems I have solved in LeetCode in this repository
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/ansemin/Leetcode/tree/master/0013-roman-to-integer) |
+| [1894-merge-strings-alternately](https://github.com/ansemin/Leetcode/tree/master/1894-merge-strings-alternately) |
 ## Array
 |  |
 | ------- |
@@ -24,4 +25,8 @@ I keep all the problems I have solved in LeetCode in this repository
 |  |
 | ------- |
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
+## Two Pointers
+|  |
+| ------- |
+| [1894-merge-strings-alternately](https://github.com/ansemin/Leetcode/tree/master/1894-merge-strings-alternately) |
 <!---LeetCode Topics End-->

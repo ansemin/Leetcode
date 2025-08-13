@@ -1,0 +1,27 @@
+class Solution(object):
+    def mergeAlternately(self, word1, word2):
+        """
+        :type word1: str
+        :type word2: str
+        :rtype: str
+        """
+        m=len(word1)
+        n=len(word2)
+        i=0
+        j=0
+        mrg=''
+        while i<m or j<n:
+            if i<m:
+                mrg+=word1[i]
+                i+=1
+            if j<n:
+                mrg+=word2[j]
+                j+=1
+
+        return mrg
+
+
+        
+        
+
+

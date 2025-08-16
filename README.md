@@ -23,6 +23,7 @@ I keep all the problems I have solved in LeetCode in this repository
 |  |
 | ------- |
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
+| [1528-kids-with-the-greatest-number-of-candies](https://github.com/ansemin/Leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 ## Greedy
 |  |
 | ------- |

@@ -23,11 +23,13 @@ I keep all the problems I have solved in LeetCode in this repository
 |  |
 | ------- |
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
+| [0605-can-place-flowers](https://github.com/ansemin/Leetcode/tree/master/0605-can-place-flowers) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/ansemin/Leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 ## Greedy
 |  |
 | ------- |
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
+| [0605-can-place-flowers](https://github.com/ansemin/Leetcode/tree/master/0605-can-place-flowers) |
 ## Two Pointers
 |  |
 | ------- |

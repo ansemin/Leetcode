@@ -1,11 +1,5 @@
-class Solution(object):
-    def reverseWords(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        # the sky is blue -> ['the', 'sky']
-        words=s.split()
-        reversed_words=words[::-1] # ['sky','the']
-        result=' '.join(reversed_words) # 'sky the'
-        return result 
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s=s.split()
+        s=s[::-1]
+        return " ".join(s)

@@ -2,7 +2,7 @@ class Solution:
     def reverseVowels(self, s: str) -> str:
         s_list=list(s) # ["I", "c","e", "C","r","e","A","m"]
         cc=[]
-        vowels=["A","a","E","e","I","i","O","o","U","u"]
+        vowels={"A","a","E","e","I","i","O","o","U","u"}
         for i in range(len(s_list)):
             if s_list[i] in vowels:
                 cc.append(s_list[i])

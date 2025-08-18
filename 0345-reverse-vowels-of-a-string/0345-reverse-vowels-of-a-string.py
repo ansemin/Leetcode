@@ -15,10 +15,8 @@ class Solution:
         while i <len(s_list):
             if s_list[i] in vowels:
                 s_list[i]=cc[j]
-                i+=1
-                j+=1
-            else: 
-                i+=1
+                j+=1 
+            i+=1
         # print(f"Final reuslt {s_list}")
         s="".join(s_list)
         return s

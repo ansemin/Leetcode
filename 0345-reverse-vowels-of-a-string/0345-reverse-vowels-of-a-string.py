@@ -1,20 +1,28 @@
-class Solution(object):
-    def reverseVowels(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        vowels= set("aeiouAEIOU")
-        s=list(s)
-        left, right =0, len(s)-1
+class Solution:
+    def reverseVowels(self, s: str) -> str:
+        s_list=list(s) # ["I", "c","e", "C","r","e","A","m"]
+        cc=[]
+        vowels=["A","a","E","e","I","i","O","o","U","u"]
+        for i in range(len(s_list)):
+            if s_list[i] in vowels:
+                cc.append(s[i])
+        # print(f"1st Result: {cc}")
+        cc=cc[::-1] # list[start, end, order]
+        # print(f'reversed {cc}')
+        # print(f"compare result {s_list}")
+        i=0
+        j=0
+        while i <len(s_list):
+            if s_list[i] in vowels:
+                s_list[i]=cc[j]
+                i+=1
+                j+=1
+            else: 
+                i+=1
+        # print(f"Final reuslt {s_list}")
+        s="".join(s_list)
+        return s
 
-        while left<right:
-            if s[left] not in vowels:
-                left+=1
-            elif s[right] not in vowels:
-                right -=1
-            else:
-                s[left],s[right]=s[right], s[left]
-                left+=1
-                right-=1
-        return "".join(s) #convert this into string 
+
+
+

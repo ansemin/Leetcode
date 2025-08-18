@@ -5,7 +5,7 @@ class Solution:
         vowels=["A","a","E","e","I","i","O","o","U","u"]
         for i in range(len(s_list)):
             if s_list[i] in vowels:
-                cc.append(s[i])
+                cc.append(s_list[i])
         # print(f"1st Result: {cc}")
         cc=cc[::-1] # list[start, end, order]
         # print(f'reversed {cc}')

@@ -26,12 +26,14 @@ I keep all the problems I have solved in LeetCode in this repository
 | ------- |
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
 | [0238-product-of-array-except-self](https://github.com/ansemin/Leetcode/tree/master/0238-product-of-array-except-self) |
+| [0334-increasing-triplet-subsequence](https://github.com/ansemin/Leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0605-can-place-flowers](https://github.com/ansemin/Leetcode/tree/master/0605-can-place-flowers) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/ansemin/Leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 ## Greedy
 |  |
 | ------- |
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
+| [0334-increasing-triplet-subsequence](https://github.com/ansemin/Leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0605-can-place-flowers](https://github.com/ansemin/Leetcode/tree/master/0605-can-place-flowers) |
 ## Two Pointers
 |  |

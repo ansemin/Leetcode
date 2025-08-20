@@ -4,26 +4,26 @@ class Solution(object):
         :type chars: List[str]
         :rtype: int
         """
-        write=0 #keeps track of where to write the compressed character
-        read=0 # scans through the array to idenitfy the group of repeating character
+        """                     
+                        g
+                            i
+        # chars = ["a","a","b","b","c","c","c"]
+                            j
+        # chars= ["a","1", "b"]
+        """
+        i=0
+        j=0
+        while i < len(chars):
+            group=1
+            while (i+group)<len(chars) and chars[i+group]==chars[i]:
+                group+=1
+            chars[j]=chars[i]
+            j+=1
+            if group >1:
+                temp=str(group)
+                chars[j:j+len(temp)]=list(temp)
+                j+=len(temp)
 
-        while read < len(chars):
-            char=chars[read]
-            count=0
+            i+=group
+        return j
 
-            while read <len(chars) and chars[read]==char:
-                read+=1
-                count+=1
-            
-            chars[write]=char
-            write+=1
-
-            if count>1:
-                for digit in str(count):
-                    chars[write]=digit
-                    write+=1
-            # print(char)
-            # print(chars[:write])
-            # print(write)
-
-        return write

@@ -1,6 +1,5 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        word1,word2=list(word1),list(word2)
         i,j,n,m=0,0,len(word1),len(word2)
         output=""
         while i<n or j<m:

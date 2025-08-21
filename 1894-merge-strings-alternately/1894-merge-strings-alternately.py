@@ -5,23 +5,26 @@ class Solution(object):
         :type word2: str
         :rtype: str
         """
-        m=len(word1)
-        n=len(word2)
-        i=0
-        j=0
-        mrg=''
-        while i<m or j<n:
-            if i<m:
-                mrg+=word1[i]
-                i+=1
-            if j<n:
-                mrg+=word2[j]
-                j+=1
-
-        return mrg
+        """
+               i
+        word1=abcd
+               j    
+        word2=pq
 
 
-        
-        
+        """
+        # result=[]
+        # word1,word2=list(word1),list(word2)
+        # min_w=min(word1,word2)
+        max_w=max(word1,word2, key=len)
+        i,j=0,0
+        result=""
+        while i < min(len(word1),len(word2)):
+            result+=word1[i]+word2[j]
+            i+=1
+            j+=1
+            if i == min(len(word1),len(word2)):
+                result+=max_w[i:]
+        return result
 
-
+            

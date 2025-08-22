@@ -1,12 +1,17 @@
-class Solution (object):
-    def moveZeroes(self, nums):
-        non_zero_index=0
-        
-        for i in range(len(nums)):
-            if nums[i] != 0:
-                nums[non_zero_index]=nums[i]
-                non_zero_index+=1
-
-        for i in range(non_zero_index, len(nums)):
-            nums[i]=0
-    
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        i=0
+        j=0
+        n=len(nums)
+        while i+j < n:
+            if abs(nums[i])>0:
+                i+=1
+            elif nums[i]==0:
+                nums.pop(i)
+                nums.append(0)
+                j+=1
+        # print(nums)
+        return nums

@@ -7,7 +7,7 @@ class Solution(object):
         """
         window=sum(nums[:k]) 
         max_a=float(window)/k # initialization of the first window 
-        for i in range(k, len(nums)):
-            window = window+nums[i]-nums[i-k]
+        for last_window in range(k, len(nums)):
+            window = window+nums[last_window]-nums[last_window-k]
             max_a=max(max_a,float(window)/k)
         return max_a

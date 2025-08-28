@@ -1,4 +1,3 @@
-# solution 1, solving in June's way
 class Solution(object):
     def longestOnes(self, nums, k):
         """
@@ -6,34 +5,21 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        # Let's save the original length before padding
-        original_length = len(nums)
-        
-        # Your padding and index finding logic
-        nums = [0] + nums + [0]
-        zero_indices = [i for i, num in enumerate(nums) if num == 0]
-
-        # Handle the edge case: if we can flip all zeros
-        # The number of real zeros is len(zero_indices) - 2
-        if len(zero_indices) - 2 <= k:
-            return original_length
-
-        # Now, find the maximum length by iterating through the "sandwiches"
-        max_length = 0
-        # We loop up to the last possible starting point of a sandwich
-        for i in range(len(zero_indices) - (k + 1)):
-            # The left boundary of the sandwich
-            left_boundary_idx = zero_indices[i]
-            # The right boundary of the sandwich
-            right_boundary_idx = zero_indices[i + k + 1]
-            
-            # Calculate the length between these boundaries
-            current_length = right_boundary_idx - left_boundary_idx - 1
-            
-            # Update our max_length if this one is bigger
-            if current_length > max_length:
-                max_length = current_length
-                
-        return max_length
-            
-
+        original= [0]+nums+[0]
+        print('orginal {}'.format(original))
+        zeros=[i for i, num in enumerate(original) if num==0] # define the 
+        print('zeros {}'.format(zeros))
+        if len(zeros) < k+2:
+            return len(nums)
+        current_value=0
+        max_value=0
+        for zp in range(len(zeros)-(k+1)):
+            left_boundary=zeros[zp]
+            right_boundary=zeros[zp+k+1]
+            print('left boundary {}, right boundary {}'.format(left_boundary, right_boundary))
+            current_value = right_boundary-left_boundary-1
+            print('current value is {}'.format(current_value))
+            if current_value>max_value:
+                max_value=current_value
+        print('final value {}'.format(max_value))
+        return max_value 

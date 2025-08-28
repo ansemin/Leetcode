@@ -9,7 +9,7 @@ class Solution(object):
         print('orginal {}'.format(original))
         zeros=[i for i, num in enumerate(original) if num==0] # define the 
         print('zeros {}'.format(zeros))
-        if len(zeros) < k+2:
+        if len(zeros) <= k+2:
             return len(nums)
         current_value=0
         max_value=0

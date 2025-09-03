@@ -7,6 +7,7 @@ I keep all the problems I have solved in LeetCode in this repository
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/ansemin/Leetcode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/ansemin/Leetcode/tree/master/0013-roman-to-integer) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/ansemin/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Math
@@ -28,6 +29,7 @@ I keep all the problems I have solved in LeetCode in this repository
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/ansemin/Leetcode/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/ansemin/Leetcode/tree/master/0011-container-with-most-water) |
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
 | [0238-product-of-array-except-self](https://github.com/ansemin/Leetcode/tree/master/0238-product-of-array-except-self) |

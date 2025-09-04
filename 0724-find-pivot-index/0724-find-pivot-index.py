@@ -1,15 +1,10 @@
-class Solution(object):
-    def pivotIndex(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        leftsum=0
-        rightsum=0
-        total=sum(nums)
+class Solution:
+    def pivotIndex(self, nums: List[int]) -> int:
+        ls=0
+        rs=sum(nums)
         for i in range(len(nums)):
-            rightsum=total-(leftsum+nums[i])
-            if leftsum==rightsum:
+            rs-=nums[i]
+            if rs==ls:
                 return i
-            leftsum+=nums[i]
+            ls+=nums[i]
         return -1

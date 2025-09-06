@@ -9,6 +9,7 @@ I keep all the problems I have solved in LeetCode in this repository
 | ------- |
 | [0001-two-sum](https://github.com/ansemin/Leetcode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/ansemin/Leetcode/tree/master/0013-roman-to-integer) |
+| [1392-find-the-difference-of-two-arrays](https://github.com/ansemin/Leetcode/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/ansemin/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Math
 |  |
@@ -39,6 +40,7 @@ I keep all the problems I have solved in LeetCode in this repository
 | [0643-maximum-average-subarray-i](https://github.com/ansemin/Leetcode/tree/master/0643-maximum-average-subarray-i) |
 | [0724-find-pivot-index](https://github.com/ansemin/Leetcode/tree/master/0724-find-pivot-index) |
 | [1046-max-consecutive-ones-iii](https://github.com/ansemin/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1392-find-the-difference-of-two-arrays](https://github.com/ansemin/Leetcode/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/ansemin/Leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ansemin/Leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/ansemin/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |

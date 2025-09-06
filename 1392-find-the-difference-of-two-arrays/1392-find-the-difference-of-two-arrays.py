@@ -4,12 +4,11 @@ class Solution:
         nums1_set=set(nums1)
         nums2_set=set(nums2)
         
-        result1=[]
+        result=[[],[]]
         for num in nums1_set: 
             if not num in nums2_set:
-                result1.append(num)
-        result2=[]        
+                result[0].append(num)        
         for num in nums2_set:
             if not num in nums1_set:
-                result2.append(num)
-        return [result1,result2]
+                result[1].append(num)
+        return result

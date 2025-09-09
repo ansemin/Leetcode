@@ -9,6 +9,7 @@ I keep all the problems I have solved in LeetCode in this repository
 | ------- |
 | [0001-two-sum](https://github.com/ansemin/Leetcode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/ansemin/Leetcode/tree/master/0013-roman-to-integer) |
+| [0889-buddy-strings](https://github.com/ansemin/Leetcode/tree/master/0889-buddy-strings) |
 | [1319-unique-number-of-occurrences](https://github.com/ansemin/Leetcode/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/ansemin/Leetcode/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/ansemin/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -25,6 +26,7 @@ I keep all the problems I have solved in LeetCode in this repository
 | [0345-reverse-vowels-of-a-string](https://github.com/ansemin/Leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/ansemin/Leetcode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/ansemin/Leetcode/tree/master/0443-string-compression) |
+| [0889-buddy-strings](https://github.com/ansemin/Leetcode/tree/master/0889-buddy-strings) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/ansemin/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ansemin/Leetcode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1894-merge-strings-alternately](https://github.com/ansemin/Leetcode/tree/master/1894-merge-strings-alternately) |

@@ -1,6 +1,8 @@
-# Leetcode 
+# Leetcode
 
-I keep all the problems I have solved in LeetCode in this repository 
+I keep all the problems I have solved in LeetCode in this repository.  
+
+[💻My LeetCode Profile](https://leetcode.com/u/anseminNUS/)
 
 <!---LeetCode Topics Start-->
 # LeetCode Topics

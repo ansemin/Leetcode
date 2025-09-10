@@ -1,4 +1,3 @@
-from collections import Counter 
 class Solution:
     def buddyStrings(self, s: str, goal: str) -> bool:
         #1st False case: Length is different

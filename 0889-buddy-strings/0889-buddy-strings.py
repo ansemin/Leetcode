@@ -4,7 +4,7 @@ class Solution:
         if len(s)!=len(goal):
             return False 
         if s==goal:
-            return len(set(s))<len(s)
+            return len(set(s))<len(s) # abab==abab -> T but ab==ab -> F
         #Track indices of difference
         diff=[]
         for i,j in enumerate(s):

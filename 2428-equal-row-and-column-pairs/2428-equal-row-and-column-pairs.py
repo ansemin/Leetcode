@@ -1,3 +1,4 @@
+from collections import Counter
 class Solution:
     def equalPairs(self, grid: List[List[int]]) -> int:
         # Get a column based list
@@ -7,8 +8,8 @@ class Solution:
         for i,j in enumerate(grid):
             grid[i]=tuple(j)
 
-        for i in grid:
-            for j in t:
-                if i==j:
-                    count+=1
+        ngrid=Counter(grid)
+        for i in t:
+            if i in ngrid:
+                count+=ngrid.get(i)
         return count 

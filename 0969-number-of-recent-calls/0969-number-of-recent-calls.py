@@ -9,8 +9,6 @@ class RecentCounter:
         while self.requests and self.requests[0]<t-3000:
             self.requests.popleft()
         return len(self.requests)
-
-
         
 
 

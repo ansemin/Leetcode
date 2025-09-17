@@ -31,6 +31,7 @@ I keep all the problems I have solved in LeetCode in this repository.
 | [0392-is-subsequence](https://github.com/ansemin/Leetcode/tree/master/0392-is-subsequence) |
 | [0394-decode-string](https://github.com/ansemin/Leetcode/tree/master/0394-decode-string) |
 | [0443-string-compression](https://github.com/ansemin/Leetcode/tree/master/0443-string-compression) |
+| [0649-dota2-senate](https://github.com/ansemin/Leetcode/tree/master/0649-dota2-senate) |
 | [0889-buddy-strings](https://github.com/ansemin/Leetcode/tree/master/0889-buddy-strings) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/ansemin/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ansemin/Leetcode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
@@ -65,6 +66,7 @@ I keep all the problems I have solved in LeetCode in this repository.
 | [0134-gas-station](https://github.com/ansemin/Leetcode/tree/master/0134-gas-station) |
 | [0334-increasing-triplet-subsequence](https://github.com/ansemin/Leetcode/tree/master/0334-increasing-triplet-subsequence) |
 | [0605-can-place-flowers](https://github.com/ansemin/Leetcode/tree/master/0605-can-place-flowers) |
+| [0649-dota2-senate](https://github.com/ansemin/Leetcode/tree/master/0649-dota2-senate) |
 ## Two Pointers
 |  |
 | ------- |
@@ -135,6 +137,7 @@ I keep all the problems I have solved in LeetCode in this repository.
 ## Queue
 |  |
 | ------- |
+| [0649-dota2-senate](https://github.com/ansemin/Leetcode/tree/master/0649-dota2-senate) |
 | [0969-number-of-recent-calls](https://github.com/ansemin/Leetcode/tree/master/0969-number-of-recent-calls) |
 ## Data Stream
 |  |

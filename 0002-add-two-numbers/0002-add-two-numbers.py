@@ -24,11 +24,10 @@ class Solution:
 
             tail.next=ListNode(digit)
             tail=tail.next
-            
-            if cursor1:
-                cursor1=cursor1.next
-            if cursor2:
-                cursor2=cursor2.next
+
+            cursor1=cursor1.next if cursor1 else None
+
+            cursor2=cursor2.next if cursor2 else None
         return result.next 
 
 

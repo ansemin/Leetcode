@@ -150,5 +150,6 @@ I keep all the problems I have solved in LeetCode in this repository.
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/ansemin/Leetcode/tree/master/0002-add-two-numbers) |
+| [0328-odd-even-linked-list](https://github.com/ansemin/Leetcode/tree/master/0328-odd-even-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/ansemin/Leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 <!---LeetCode Topics End-->

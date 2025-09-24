@@ -25,15 +25,3 @@ class Solution:
         return maximum
 
 
-
-        # for i in range(n):
-        #     pair=n-1-i
-        #     # print(f'i: {i}')
-        #     # print(f' pair is {pair}')
-        #     # print(type(pair))
-        #     total=elements[pair]+elements[i]
-        #     # print(total)
-        #     maximum=max(total,maximum)
-        # return maximum 
-
-

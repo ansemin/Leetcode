@@ -9,17 +9,16 @@ class Solution:
         while fast and fast.next:
             fast=fast.next.next
             slow=slow.next
-        # print(slow) # middle part 
+
         prev=None
         curr=slow
-        # print(slow)
-        # print(head)
+
         while curr:
             nextnode=curr.next #save
             curr.next=prev #move curr.next
             prev=curr # move prev
             curr=nextnode
-        # print(prev)
+
         head2=prev
         maximum=0
         while head2:

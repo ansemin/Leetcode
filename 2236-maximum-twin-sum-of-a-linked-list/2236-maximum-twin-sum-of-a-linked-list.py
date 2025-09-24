@@ -19,7 +19,7 @@ class Solution:
             total=elements[i]+elements[j]
             i+=1
             j-=1
-            maximum=max(total,maximum)
+            maximum=max(total,maximum) 
         return maximum
 
 

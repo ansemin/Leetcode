@@ -11,11 +11,9 @@ class Solution:
             values=cursor.val
             elements.append(values)
             cursor=cursor.next
-        # print(elements) #[5, 4, 2, 1]
-        # total length
         n=len(elements)
         maximum=0
-        j=n-1 #initialize the end index
+        j=n-1 
         i=0
         while i<j:
             total=elements[i]+elements[j]

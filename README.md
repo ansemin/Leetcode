@@ -161,10 +161,12 @@ I keep all the problems I have solved in LeetCode in this repository.
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ansemin/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0904-leaf-similar-trees](https://github.com/ansemin/Leetcode/tree/master/0904-leaf-similar-trees) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ansemin/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0904-leaf-similar-trees](https://github.com/ansemin/Leetcode/tree/master/0904-leaf-similar-trees) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -173,4 +175,5 @@ I keep all the problems I have solved in LeetCode in this repository.
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ansemin/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0904-leaf-similar-trees](https://github.com/ansemin/Leetcode/tree/master/0904-leaf-similar-trees) |
 <!---LeetCode Topics End-->

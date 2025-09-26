@@ -6,23 +6,17 @@
 #         self.right = right
 class Solution:
     def goodNodes(self, root: TreeNode) -> int:
-        # for a single root case 
         if not root:
             return 0
         
-        def CountMax(root, max_value=float('-inf')):
-            count=0
+        def bottom(root, max_val=float('-inf')):
             if not root:
                 return 0
-            if root.val >=max_value:
-                print('Identified the new count')
-                max_value=root.val
+            count=0
+            if root.val>=max_val:
+                max_val=root.val
                 count+=1
-            count+=CountMax(root.left,max_value)
-            count+=CountMax(root.right,max_value)
+            count+=bottom(root.left,max_val)
+            count+=bottom(root.right,max_val)
             return count
-        return CountMax(root,max_value=float('-inf'))
-       
-
-
-        
+        return bottom(root,max_val=float('-inf'))

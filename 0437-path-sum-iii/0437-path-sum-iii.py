@@ -4,28 +4,24 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+from collections import defaultdict
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
-        self.path=0
-        self.memory=defaultdict(int)
-        self.memory[0]=1
+        self.count=0
+        self.countDict=defaultdict(int)
+        self.countDict[0]=1
         
-        def dfs(node, cs):
+        def dfs(node, currSum):
             if not node:
                 return 
-            # print(f'nodevalue is {node.val}')
-            cs+=node.val
-            self.path+=self.memory[cs-targetSum]
-            self.memory[cs]+=1
-            # print(f' current sum is {cs}')
-            # print(f'The memory is {self.memory}')
+            currSum+=node.val
+            self.count+=self.countDict[currSum-targetSum]
+            self.countDict[currSum]+=1
             if node.left:
-                # print(f'Going into left Node of {node.left.val}')
-                dfs(node.left,cs)
+                dfs(node.left,currSum)
             if node.right:
-                # print(f'Going into right Node of {node.right.val}')
-                dfs(node.right, cs)
-            self.memory[cs]-=1
-            # print(f'path is {self.path}')
+                dfs(node.right,currSum)
+            self.countDict[currSum]-=1
+        
         dfs(root,0)
-        return self.path 
+        return self.count

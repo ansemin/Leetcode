@@ -7,20 +7,25 @@
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
         self.path=0
-        from collections import defaultdict
-        self.pathSum=defaultdict(int)
-        self.pathSum[0]=1
+        self.memory=defaultdict(int)
+        self.memory[0]=1
         
-        def dfs(root,currSum):
-            if not root:
+        def dfs(node, cs):
+            if not node:
                 return 
-            currSum+=root.val
-            self.path+=self.pathSum[currSum-targetSum]
-            self.pathSum[currSum]+=1
-            if root.right:
-                dfs(root.right,currSum)
-            if root.left:
-                dfs(root.left,currSum)
-            self.pathSum[currSum]-=1
+            print(f'nodevalue is {node.val}')
+            cs+=node.val
+            self.path+=self.memory[cs-targetSum]
+            self.memory[cs]+=1
+            print(f' current sum is {cs}')
+            # print(f'The memory is {self.memory}')
+            if node.left:
+                print(f'Going into left Node of {node.left.val}')
+                dfs(node.left,cs)
+            if node.right:
+                print(f'Going into right Node of {node.right.val}')
+                dfs(node.right, cs)
+            self.memory[cs]-=1
+            # print(f'path is {self.path}')
         dfs(root,0)
         return self.path 

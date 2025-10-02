@@ -13,17 +13,17 @@ class Solution:
         def dfs(node, cs):
             if not node:
                 return 
-            print(f'nodevalue is {node.val}')
+            # print(f'nodevalue is {node.val}')
             cs+=node.val
             self.path+=self.memory[cs-targetSum]
             self.memory[cs]+=1
-            print(f' current sum is {cs}')
+            # print(f' current sum is {cs}')
             # print(f'The memory is {self.memory}')
             if node.left:
-                print(f'Going into left Node of {node.left.val}')
+                # print(f'Going into left Node of {node.left.val}')
                 dfs(node.left,cs)
             if node.right:
-                print(f'Going into right Node of {node.right.val}')
+                # print(f'Going into right Node of {node.right.val}')
                 dfs(node.right, cs)
             self.memory[cs]-=1
             # print(f'path is {self.path}')

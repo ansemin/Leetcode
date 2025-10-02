@@ -22,5 +22,6 @@ class Solution:
                 count+=1
                 dfs(root.right,count,'right')
                 dfs(root.left,1,'left')
+
         dfs(root,0,'central')
         return self.max

@@ -7,27 +7,11 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        self.path_p=[]
-        self.path_q=[]
-        def search(node, current_path=[]):
-            if not node:
-                return 
-            current_path.append(node)
-            if node==p:
-                self.path_p=current_path.copy()
-            if node==q:
-                self.path_q=current_path.copy()
-            search(node.left,current_path)
-            search(node.right,current_path)
-            current_path.pop()
-        search(root,[])
-        # print(f'p path{self.path_p}')
-        # print(f'q path {self.path_q}')
+        if not root or root==q or root==p:
+            return root
+        left_anc=self.lowestCommonAncestor(root.left,p,q)
+        right_anc=self.lowestCommonAncestor(root.right,p,q)
 
-        pnode=set(self.path_p)
-        lca=None
-        for node in reversed(self.path_q):
-            if node in pnode:
-              lca=node  
-              break
-        return lca
+        if left_anc and right_anc:
+            return root
+        return left_anc if left_anc else right_anc

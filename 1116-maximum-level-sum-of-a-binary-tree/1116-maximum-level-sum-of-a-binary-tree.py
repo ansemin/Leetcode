@@ -6,17 +6,15 @@
 #         self.right = right
 from collections import deque
 class Solution:
-    def maxLevelSum(self, root: Optional[TreeNode]) -> int: 
-        if not root.left and not root.right:
-            return 1
+    def maxLevelSum(self, root: Optional[TreeNode]) -> int:
         queue=deque([root])
         max_sum=float('-inf')
-        result_level=0
+        max_level=0
         current_level=1
         while queue:
             level_size=len(queue)
             current_sum=0
-            for i in range(len(queue)):
+            for i in range(level_size):
                 node=queue.popleft()
                 current_sum+=node.val
                 if node.left:
@@ -25,8 +23,6 @@ class Solution:
                     queue.append(node.right)
             if current_sum>max_sum:
                 max_sum=current_sum
-                result_level=current_level
+                max_level=current_level
             current_level+=1
-        return result_level
-        
-        
+        return max_level

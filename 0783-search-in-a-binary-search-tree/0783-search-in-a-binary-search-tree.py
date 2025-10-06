@@ -11,7 +11,7 @@ class Solution:
             print(current)
             if val < current.val:
                 current=current.left
-            elif val > current.val:
+            elif val > current.val: #elif ensure it doesn't updated twice 
                 current=current.right
             else:
                 return current

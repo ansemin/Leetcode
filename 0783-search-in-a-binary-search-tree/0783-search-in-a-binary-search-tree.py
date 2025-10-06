@@ -8,7 +8,7 @@ class Solution:
     def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
         current=root 
         while current:
-            print(current)
+            # print(current)
             if val < current.val:
                 current=current.left
             elif val > current.val: #elif ensure it doesn't updated twice 

@@ -6,28 +6,26 @@
 #         self.right = right
 class Solution:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
-        # Base case: if the tree is empty 
         if not root:
             return None
-        # 1. Searching the node
+        # Traversing
         if key<root.val:
             root.left=self.deleteNode(root.left,key)
         elif key>root.val:
             root.right=self.deleteNode(root.right,key)
+        # found a match
         else:
-            # 2. Found the nonde to delete 
-            # Case 1: Node has 0 or 1 child
+            # Either has 1 or 0 node
             if not root.left:
                 return root.right
             if not root.right:
                 return root.left
-            # Case 2: Node has two children 
-            # Find the in-order sucessor (smallest in the right subtree)
+            # have two nodes 
             temp=root.right
             while temp.left:
                 temp=temp.left
-            # Copy the sucessor's value to this node 
+            # set this smallest value to the root value
             root.val=temp.val 
-            # Recursively delete the sucessor from the right subtree
-            root.right=self.deleteNode(root.right, root.val)
+            # now delete the smallest node from the tree
+            root.right=self.deleteNode(root.right,temp.val)
         return root

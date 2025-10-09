@@ -1,24 +1,22 @@
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
         from collections import deque 
-        # Initial the counter and visited memory
-        province=0
         visited=set()
+        counter=0
         for i in range(len(isConnected)):
             if i not in visited:
-                # Increase the increment
-                province+=1
-                # Set to queue for exploration
-                queue=deque([i])
-                # Add this to visited
                 visited.add(i)
+                counter+=1
+                # we need to the explore all relevant cities related to this ith city to ensure which cities links to this city as province 
+                queue=deque([i])
                 while queue:
-                    # Extract the index of the current city
+                    # Extract the current city
                     current_city=queue.popleft()
                     for city in range(len(isConnected)):
                         if isConnected[current_city][city]==1 and city not in visited:
-                            queue.append(city)
+                            # mark it as seen 
                             visited.add(city)
-                
-        return province
-
+                            # repeat for the next connecting city
+                            queue.append(city)
+        return counter
+                        
